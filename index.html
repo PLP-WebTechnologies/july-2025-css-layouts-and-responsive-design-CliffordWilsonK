@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Layouts & Responsive Web Design Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <h1>My Responsive Webpage</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <!-- Main Layout Section (CSS Grid) -->
+  <main class="site-main">
+    <div class="main-grid container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <ul>
+          <li><a href="#">Quick Link 1</a></li>
+          <li><a href="#">Quick Link 2</a></li>
+          <li><a href="#">Quick Link 3</a></li>
+        </ul>
+      </aside>
+
+      <!-- Content Area -->
+      <section class="content">
+        <section id="about">
+          <h2>About This Page</h2>
+          <p>
+            This page demonstrates modern CSS layout techniques using both Flexbox and Grid, with responsiveness across devices.
+          </p>
+        </section>
+
+        <section id="features">
+          <h2>Features</h2>
+          <div class="features-flex">
+            <div class="card">
+              <h3>Flexbox</h3>
+              <p>Used for aligning navigation and cards in a row or column layout.</p>
+            </div>
+            <div class="card">
+              <h3>CSS Grid</h3>
+              <p>Main layout is managed via CSS Grid for complex two-dimensional placement.</p>
+            </div>
+            <div class="card">
+              <h3>Responsive Design</h3>
+              <p>Media queries and flexible units ensure a beautiful experience on all screens.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="3" required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 My Responsive Webpage. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
